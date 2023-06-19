@@ -51,7 +51,7 @@ class _WelcomePageState extends State<WelcomePage> {
                       fit: BoxFit.cover)),
               child: Container(
                 margin: const EdgeInsets.only(
-                    top: 600, left: 30, right: 30, bottom: 10),
+                    top: 500, left: 30, right: 30, bottom: 10),
                 child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -61,7 +61,7 @@ class _WelcomePageState extends State<WelcomePage> {
                           AppLargeText(text: welcomTitle[index]),
                           const SizedBox(height: 10),
                           AppText(text: welcomSubTitle[index], size: 20),
-                          const SizedBox(height: 20),
+                          const SizedBox(height: 10),
                           SizedBox(
                             width: 250,
                             child: AppText(
@@ -70,16 +70,18 @@ class _WelcomePageState extends State<WelcomePage> {
                               size: 16,
                             ),
                           ),
-                          const SizedBox(height: 40),
+                          const SizedBox(height: 20),
                           GestureDetector(
                             onTap: () {
                               BlocProvider.of<AppCubits>(context).getData();
                             },
                             child: Container(
                               width: 200,
-                              child: ResponsiveButton(
-                                width: 120,
-                              ),
+                              child: Row(children: [
+                                ResponsiveButton(
+                                  width: 120,
+                                ),
+                              ]),
                             ),
                           )
                         ],

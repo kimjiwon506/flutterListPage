@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_0612/cubit/app_cubit_logics.dart';
 import 'package:flutter_application_0612/cubit/app_cubits.dart';
-import 'package:flutter_application_0612/pages/detail_page.dart';
-import 'package:flutter_application_0612/pages/home_page.dart';
-import 'package:flutter_application_0612/pages/navpages/main_page.dart';
-import 'package:flutter_application_0612/pages/welcome_page.dart';
 import 'package:flutter_application_0612/services/data_services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
